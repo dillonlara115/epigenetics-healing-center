@@ -66,7 +66,7 @@
                         <a href="tel:9133399951">(913) 339-9951</a> 
                     </div>
                     <div class="col-md-4 text-center">
-                        <img src="http://maxtestdomain.com/epigenetics-healing-center/wp-content/uploads/2015/03/logo-only.png" alt="Dr. Goodbinder">
+                        <img src="<?php bloginfo('url'); ?>/wp-content/uploads/2015/03/logo-only.png" alt="Dr. Goodbinder">
                     </div>
                     <div class="col-md-4 text-center footer-address">
                         <h3>The Epigenetics Healing Center</h3>

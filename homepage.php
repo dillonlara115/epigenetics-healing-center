@@ -56,21 +56,21 @@ get_header(); ?>
                         <div class="col-md-6">
                             <ul class="media-list side-nav">
                                 <li class="media is-open">
-                                    <a class="pull-left" href="#content1"><img class="media-object" src="http://maxtestdomain.com/epigenetics-healing-center/wp-content/uploads/2015/03/success-story-1-ehc.jpg" height="64" width="64"></a>
+                                    <a class="pull-left" href="#content1"><img class="media-object" src="<?php bloginfo('url'); ?>/wp-content/uploads/2015/03/success-story-1-ehc.jpg" height="64" width="64"></a>
                                     <div class="media-body">
                                         <h4 class="media-heading">M.H.</h4>
                                         <p><em>I knew what Dr. Goodbinder was telling me were the facts, there was truth behind it, and he explained it at a level that made sense to me...</em></p>
                                     </div>
                                 </li>
                                 <li class="media">
-                                    <a class="pull-left" href="#content2"><img class="media-object" src="http://maxtestdomain.com/epigenetics-healing-center/wp-content/uploads/2015/03/success-story-2-ehc.jpg" height="64" width="64"></a>
+                                    <a class="pull-left" href="#content2"><img class="media-object" src="<?php bloginfo('url'); ?>/wp-content/uploads/2015/03/success-story-2-ehc.jpg" height="64" width="64"></a>
                                     <div class="media-body">
                                         <h4 class="media-heading">M.R.</h4>
                                         <p><em>I think people should know that a prescription medication from a doctor isn't always the way to go...</em></p>
                                     </div>
                                 </li>
                                 <li class="media">
-                                    <a class="pull-left" href="#content3"><img class="media-object" src="http://maxtestdomain.com/epigenetics-healing-center/wp-content/uploads/2015/04/success-story-3-ehc.jpg" height="64" width="64"></a>
+                                    <a class="pull-left" href="#content3"><img class="media-object" src="<?php bloginfo('url'); ?>/wp-content/uploads/2015/04/success-story-3-ehc.jpg" height="64" width="64"></a>
                                     <div class="media-body">
                                         <h4 class="media-heading">C.G.</h4>
                                         <p><em>Dr. Goodbinder's program helped me totally reduce the bad side effects of chemotherapy. I trusted him with with life...</em></p>

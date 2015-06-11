@@ -53,7 +53,7 @@ rel="stylesheet" type="text/css">
 			</div>
             <div class="navbar-header">
                 <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"> 
-                <img src="http://maxtestdomain.com/epigenetics-healing-center/wp-content/uploads/2015/04/logo-large-white.png" alt="<?php bloginfo( 'name' ); ?>" class="header-logo"/>
+                <img src="<?php bloginfo('url'); ?>/wp-content/uploads/2015/04/logo-large-white.png" alt="<?php bloginfo( 'name' ); ?>" class="header-logo"/>
 <!--                     <span><?php bloginfo( 'name' ); ?></span> --> 
 				</a>
             </div>
@@ -98,7 +98,7 @@ rel="stylesheet" type="text/css">
             <div class="header-buckets">
                 <ul class="media-list">
                     <li class="media">
-                        <a class="pull-left" href="<?php echo get_permalink( 17 ); ?>"><img src="http://maxtestdomain.com/epigenetics-healing-center/wp-content/uploads/2015/04/John-Holt-JH10-e1428085359440.jpg" alt="text here" height="125" width="125" class="img-circle"></a>
+                        <a class="pull-left" href="<?php echo get_permalink( 17 ); ?>"><img src="<?php bloginfo('url'); ?>/wp-content/uploads/2015/04/John-Holt-JH10-e1428085359440.jpg" alt="text here" height="125" width="125" class="img-circle"></a>
                         <div class="media-body">
                             <h4 class="media-heading"><a href="<?php echo get_permalink( 17 ); ?>">Who We Serve</a></h4>
                             <p> Your Functional Family Physician</p> 
@@ -106,14 +106,14 @@ rel="stylesheet" type="text/css">
                         </div>
                     </li>
                     <li class="media">
-                        <a class="pull-left" href="<?php echo get_permalink( 82 ); ?>"><img src="http://maxtestdomain.com/epigenetics-healing-center/wp-content/uploads/2015/04/testimonials-johanna-epstein-e1428085324680.jpg" alt="text here" height="125" width="125" class="img-circle"></a>
+                        <a class="pull-left" href="<?php echo get_permalink( 82 ); ?>"><img src="h<?php bloginfo('url'); ?>/wp-content/uploads/2015/04/testimonials-johanna-epstein-e1428085324680.jpg" alt="text here" height="125" width="125" class="img-circle"></a>
                         <div class="media-body">
                             <h4 class="media-heading"><a href="<?php echo get_permalink( 82 ); ?>">Success Stories</a></h4>
                             <p>We value our patients' experience.</p> 
                         </div>
                     </li>
                     <li class="media">
-                        <a class="pull-left" href="<?php echo get_permalink( 91 ); ?>"><img src="http://maxtestdomain.com/epigenetics-healing-center/wp-content/uploads/2015/04/meet-doctor.jpg" alt="text here" height="125" width="125" class="img-circle"></a>
+                        <a class="pull-left" href="<?php echo get_permalink( 91 ); ?>"><img src="<?php bloginfo('url'); ?>/wp-content/uploads/2015/04/meet-doctor.jpg" alt="text here" height="125" width="125" class="img-circle"></a>
                         <div class="media-body">
                             <h4 class="media-heading"><a href="<?php echo get_permalink( 91 ); ?>">Meet the Doctor</a></h4>
                             <p>Jay Goodbinder PSc. Dr.</p> 
