@@ -1,0 +1,14 @@
+$ie: false !default;
+
+@mixin mq($width) {
+    // If using ie
+    @if $ie {
+        @content;       
+    }
+    @else {
+        // Otherwise, output it using a regular media query
+        @media screen and (min-width: $width) {
+            @content;
+        }
+    }
+}

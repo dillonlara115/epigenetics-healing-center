@@ -1,0 +1,1203 @@
+/*--------------------------------------------------------------
+# Custom styles
+--------------------------------------------------------------*/
+@import '../mediaq';
+@import '../variables-site/colors';
+
+
+// extends
+.logo-divider {
+	padding: 10px 0 90px;
+	margin-bottom: 1em;
+}
+
+html {
+	font-size: 16px;
+
+	@include mq(992px) {
+		font-size: 14px;
+	}
+	.row {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	p {
+		line-height: 2;
+	} 
+}
+
+.cover {
+	min-height: 690px;
+	@include mq(48em) {
+		min-height: 650px;
+	}
+	@media (max-width: 48em) {
+		min-height: 820px;
+	}
+	
+	width: 100%;
+	border-bottom: 1px solid $primary-color;
+	.cta-header {
+		margin-top: 10em;
+	}
+	&.cover-secondary {
+		min-height: 400px;
+		h1 {
+			margin: 1.5em 0;
+		}
+	}
+}
+
+header {
+	@include mq(48em) {
+		padding-top: .8em;
+	}
+	.fa {
+		margin-right: .5em;
+	}
+	display: none;
+}
+
+
+.navbar-default .navbar-nav > li > a {
+	display: inline-block;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+	color: darken(#fff, 25%);
+}
+footer#colophon {
+	color: #000;
+	background-color: #fff!important;
+	clear: both;
+	hr {
+		border-bottom: 1px solid $primary-color;
+		margin: .5em 0;
+	}
+}
+.default-list-group {
+	margin-left: 0;
+	max-width: 310px;
+}
+.btn-default {
+	background-color: $cta-color;
+	border: 1px solid $cta-color;
+	border-radius: 0;
+	&:hover {
+		background-color: lighten($cta-color, 10%);
+	}
+}
+
+.basic-section {
+	background: #fff;
+}
+
+/* =Video
+----------------------------------------------- */
+video {
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	background: url(http://menumakerfoods.com/wp-content/uploads/2014/09/video-bg.png) no-repeat center center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-size: cover;
+	z-index: -1;
+	overflow: auto;
+	display: block;
+	@media (max-width: 48em) {
+		display: none;
+	}
+}
+
+
+
+.cover {
+	.navbar-nav {
+		color: $tertiary-color;
+
+		> li {
+			height: 50px;
+			> a {
+				color: #fff;
+				transition: color 250ms ease;
+				text-transform: uppercase;
+				padding: 10px;
+				@media (max-width: 1200px) {
+					padding: 7px;
+				}
+			}
+			&:last-child a{
+				padding-right: 0;
+			}
+		}
+	}
+	.navbar.navbar-default {
+		border-radius: 0;
+		@media (max-width: 48em) {
+			background-color: #fff !important;
+		}
+
+	}
+	.cover-image.cover-image-home {
+		z-index: 0;
+		@media (max-width: 48em) {
+			background-color: rgba(0, 0, 0, 0.55);
+		}
+		
+	}
+	.cover-image-sub {
+		background: url("http://maxtestdomain.com/epigenetics-healing-center/wp-content/uploads/2015/04/sub-header-image2.jpg") no-repeat center center; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		background-position-y: -130px;
+		@media (max-width:48em) {
+			background-position-y: 0!important;;
+		}
+		z-index: 0;
+		&:after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left:0;
+			right: 0;
+			bottom: 0;
+			background: rgba(0, 0, 0, 0.35);
+			z-index: -1;
+		}
+		.cta-container {
+			margin: 0 auto;
+			padding-top: 110px;
+			width: auto;
+		}
+	}
+	.media-body p {
+		font-size: 14px;
+		line-height: 1.5;
+	}
+
+}
+
+.header-buckets {
+	padding: 9px 0;
+	background: black;
+	background: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	width: 100%;
+	height: auto;
+	display: flex;
+	@include mq(48em) {
+		height: 145px;
+	}
+	.media-list {
+		margin: 0 auto;
+		padding: 0;
+		 .media {
+			padding: 0;
+			width: 320px;
+			display: inline-block;
+			margin: 15px 1em;
+			@media (max-width: 48em) {
+				width: 100%;
+				display: block;
+			}
+			.media-body {
+				padding: 1em .25em;
+				height: 125px;
+			}
+			.media-heading {
+				a {
+					color: $primary-color;
+					transition: color 250ms linear;
+					&:hover {
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+	.img-circle {
+		  border: 5px solid #fff;
+		  transition: border-color 250ms ease;
+		  width: 100px;
+		  height: 100px;
+		  &:hover {
+		  	border-color: darken(#fff, 25%);
+		  }
+	}
+}
+
+.navbar-header {
+	max-width: 250px;
+	float: left;
+	padding-left: .5em;
+	@include mq(992px) {
+		max-width: 380px;
+		position: relative;
+		top: -29px;
+		transition: all 250ms ease;
+	}
+	img {
+		max-width: 90%;
+	}
+}
+
+.navbar-brand {
+	padding:0;
+	width: 100%;
+	
+} 
+.header-tel {
+	color: #fff;
+	position: relative;
+	font-size: 16px;
+	&:hover {
+		color: darken(#fff, 25%);
+	}
+	&:active {
+		color: darken(#fff, 45%);
+	}
+	&:before {
+		content: '';
+		background: url('http://maxtestdomain.com/epigenetics-healing-center/wp-content/uploads/2015/04/icon-phone-white.gif');
+		display: inline-block;
+		width: 18px;
+		height: 18px;
+		top: 0;
+		position: absolute;
+		left: -1.6em;
+		background-size: contain;
+	}
+}
+
+a:link{
+	text-decoration: none;
+}
+
+
+.slick-prev:before, .slick-next:before {
+	color: $primary-color;
+	margin-top:-30px;
+}
+
+.slick-slide {
+	margin: 0 .5em;
+	cursor: pointer;
+}
+
+
+
+
+//left arrow
+.arrow_box {
+	position: relative;
+}
+.arrow_box:after {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(136, 183, 213, 0);
+	border-right-color: #eee;
+	border-width: 16px;
+	margin-top: -30px;
+	transition: border-right-color 250ms ease;
+}
+
+[data-content] {
+	text-align: center;
+}
+.media-list .media {
+	margin-top: 15px;
+	padding: 1em;
+	position: relative;
+}
+.side-nav {
+	@media (max-width: 48em) {
+		margin: 0;
+	}
+	.media {
+		cursor: pointer;
+		overflow: visible;
+		transition: background 250ms ease;
+		&:before {
+			content: ' ';
+			border-bottom: 1px solid #ccc;
+			width: 100%;
+			position: absolute;
+			bottom: -7px;
+			right: 0;
+		}
+		&:hover {
+			background: rgba(238, 238, 238, 0.5);
+			&:after {
+				border-right-color: rgba(238, 238, 238, 0.5);
+			}
+		}
+	}
+}
+
+
+
+
+/* Actual navmenu CSS */
+#primary-menu {
+	.sub-menu {
+		visibility: hidden;
+		min-height: 0;
+		opacity: 0;
+		position: absolute;
+		min-width: 100%;
+		background: rgba(255, 255, 255, 0.9) !important;
+		margin-left: 0;
+		padding: 0;
+		top: 75px;
+		transition: all 250ms ease;
+		&:before {
+			width: 0;
+			height: 0;
+			border-left: 5px solid transparent;
+			border-right: 5px solid transparent;
+			border-bottom: 5px solid rgba(255, 255, 255, 0.9) !important;
+			content: "";
+			position: absolute;
+			top: -5px;
+			left: 2em;
+		}
+		&:after {
+			content: "";
+			background: transparent;
+			min-height: 10px;
+			position: absolute;
+			top: -10px;
+			width: 100%;
+		}
+		li {
+			list-style-type: none;
+			padding: 0 1em;
+			color: $primary-color;
+			transition: all 250ms ease;
+		}
+		a {
+			display: block;
+			line-height: 36px !important;
+			white-space: nowrap;
+			text-transform: uppercase;
+		}
+	}
+
+}
+
+#primary-menu > li:hover .sub-menu{
+	visibility: visible;
+	opacity: 1;
+	top: 40px;
+	min-height: 50px;
+	transition: all 250ms ease;
+	li:hover {
+		background: rgba(43, 115, 159, 0.8)!important;
+		a {
+			color: #fff;
+		}
+	}
+}	
+/* Hide next level of subnavigation */
+#primary-menu > li:hover > .subm-enu .sub-menu{
+	display: none;
+}
+
+
+
+#simple-menu {
+  position: absolute;
+  right: 1em;
+}
+
+//Sidr Overwrites
+.sidr.right {
+	background: #fff;
+	color: $primary-color;
+	ul {
+		background: #fff;
+		margin: 0;
+		li {
+			border-bottom: 1px solid $primary-light-color;
+			.social-icon-mobile {
+				padding: 0 10px;
+			}
+			a {
+				color: #fff;
+				background: $primary-color;
+			}
+			ul li a {
+				color: $primary-color;
+				background: #fff;
+			}
+		} 
+	}
+}
+
+.sidr ul li:hover>a, .sidr ul li:hover>span, .sidr ul li.active>a, .sidr ul li.active>span, .sidr ul li.sidr-class-active>a, .sidr ul li.sidr-class-active>span, .sidr ul li ul li:hover>a, .sidr ul li ul li:hover>span, .sidr ul li ul li.active>a, .sidr ul li ul li.active>span, .sidr ul li ul li.sidr-class-active>a, .sidr ul li ul li.sidr-class-active>span  {
+   -webkit-box-shadow: none; 
+  -moz-box-shadow: none;
+   box-shadow: none; 
+}
+
+.sidr ul li:hover, .sidr ul li.active, .sidr ul li.sidr-class-active {
+  line-height: 48px;
+  border-top: 1px solid #fff;
+}
+
+#secondary-menu {
+	.center-block {
+		margin-top: .25em;
+		width: 100%;
+		padding-left: .5em;
+	}
+	
+	a {
+		color: $primary-color;
+		background: #fff;
+	}
+}
+
+.entry-content ul {
+	margin: 0 0 10px 0;
+}
+
+.entry-title {
+	color: $primary-color;
+	font-size: 42px;
+	text-align: center;
+	background: url("http://maxtestdomain.com/epigenetics-healing-center/wp-content/uploads/2015/03/logo-div-light-blue.png") no-repeat bottom center; 
+	@extend .logo-divider;
+	&-testimonial {
+		color: $primary-color;
+		font-size: 42px;
+	}
+}
+/*---------------*/
+/***** Sarah *****/
+/*---------------*/
+
+figure.bucket {
+	background: #42b078;
+	img {
+		max-width: none;
+		width: -webkit-calc(100% + 20px);
+		width: calc(100% + 20px);
+		-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+		transition: opacity 0.35s, transform 0.35s;
+		-webkit-transform: translate3d(-10px,0,0);
+		transform: translate3d(-10px,0,0);
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+		@media (max-width: 48em) {
+			opacity: .4;
+		}
+	}
+
+	p {
+		padding: 1em 0;
+		@include mq(48em) {
+			opacity: 0;
+			-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+			transition: opacity 0.35s, transform 0.35s;
+			-webkit-transform: translate3d(100%,0,0);
+			transform: translate3d(100%,0,0);
+		}
+
+	}
+	&:hover {
+		img {
+			opacity: 0.4;
+			-webkit-transform: translate3d(0,0,0);
+			transform: translate3d(0,0,0);
+		}
+		h2::after {
+			-webkit-transform: translate3d(0,0,0);
+			transform: translate3d(0,0,0);
+		}
+		 p {
+			opacity: 1;
+			-webkit-transform: translate3d(0,0,0);
+			transform: translate3d(0,0,0);
+		}
+	}
+	&:before {
+		content: ' ';
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		background: rgba(0, 0, 0, 0.35);
+		z-index: 5;
+	}
+}
+
+.col-xxs-12 {
+	@media (max-width: 512px) {
+		width: 100%;
+	}
+}
+/* Common style */
+.homepage-bucket {
+	padding: 0;
+	@media (max-width: 512px) {
+		max-height: 160px;
+	}
+	@media (max-width: 992px) {
+		max-height: 190px;
+		overflow: hidden;
+	}
+	figure {
+		position: relative;
+		overflow: hidden;
+		margin: .5em;
+		background: #3085a3;
+		text-align: center;
+		cursor: pointer;
+		@include mq(1200px) {
+			margin: 1.5em;
+		}
+		figcaption {
+			text-align: left;
+			padding: 1em;
+			color: #fff;
+			text-transform: uppercase;
+			font-size: 1.25em;
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+			z-index: 8;
+		}
+		h2 {
+			font-weight: 300;
+			margin: 0;
+			font-size: 1.1em;
+			position: relative;
+			overflow: hidden;
+			padding: 0.5em 0;
+			span {
+				font-weight: 800;
+			}
+			&:after {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 3px;
+				background: #fff;
+				content: '';
+				-webkit-transition: -webkit-transform 0.35s;
+				transition: transform 0.35s;
+				-webkit-transform: translate3d(-100%,0,0);
+				transform: translate3d(-100%,0,0);
+			}
+			@media (max-width: 48em) {
+				font-size: .8em;
+			}
+		}
+		p {
+			letter-spacing: 1px;
+			font-size: 68.5%;
+			margin: 0;
+			@media (max-width: 48em) {
+				letter-spacing: 0;
+				line-height: 1.5;
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+
+.homepage-bucket figure figcaption::before,
+.homepage-bucket figure figcaption::after {
+	pointer-events: none;
+}
+
+.homepage-bucket figure figcaption,
+.homepage-bucket figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.homepage-bucket figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.cta-container {
+	margin-bottom: 5.5em;
+	padding: 131px 0 0;
+	color: #fff;
+	font-style: italic;
+	margin: 0 auto 3.5em;
+	max-width: 680px;
+	font-size: 2em;
+	-webkit-font-smoothing: antialiased;
+	@media (max-width: 48em) {
+		font-size: 1em;
+	}
+	h1 {
+		font-size: 57px;
+		text-transform: uppercase;
+		position: relative;
+		font-style: normal;
+		text-align: center;
+		@media (max-width: 48em) {
+			font-size: 2em;
+		}
+		&:after {
+			content: '';
+			border-top: 1px solid #fff;
+			height: 1px;
+			position: absolute;
+			bottom: -10px;
+			right: 37%;
+			left: 35%;
+		}
+	}
+	p {
+		font-size: 18px;
+		font-style: italic;		
+	}
+	.contact-link {
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		width: 230px;
+		color: #fff;
+		margin-top: .7em;
+	}
+}
+
+// Sticky Header
+.cover header.navbar {
+	transition: all .4s ease;
+	z-index: 99;
+	position: fixed;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	@media (max-width: 48em) {
+		border-bottom: 1px solid $primary-color;
+		height: 70px;
+	}
+	&.sticky {
+		@include mq(48em) {
+			background-color: rgba(255, 255, 255, 0.97) !important;
+			border-bottom: 1px solid $primary-color;
+			-webkit-transform: translateY(-37%);
+			-moz-transform: translateY(-37%);
+			transform: translateY(-37%);
+			.navbar-header {
+				max-width: 230px;
+				top: 0;
+			}
+			.navbar-nav > li > a {
+				color: $primary-color;
+			}
+			#primary-menu>li:hover .sub-menu {
+				top: 59px;
+			}
+		}
+	}
+}
+.modal-dialog {
+	z-index: 1111;
+}
+#ticker {
+	margin: 0;
+	padding: 0 0 0 .3em;
+	display: inline-block;
+	width: auto;
+	text-align: left;
+	li {
+		list-style-type: none;
+		font-style: italic;
+		font-size: 27px;
+		@media (max-width: 48em) {
+			font-size: 1em;
+		}
+	}
+}
+
+
+// panel overrides
+.panel-default {
+	border-radius: 0;
+	> .panel-heading {
+		background-color: $primary-light-color;
+		height: 32px;
+		padding: .5em;
+		border-radius: 0;
+		h3 {
+			vertical-align: middle;
+			display: inline-block;
+		}
+	}
+}
+
+.content-area {
+	@include mq(48em) {
+		float: right;
+		width: 65%;
+	}
+
+}
+.site-secondary {
+	@include mq(48em) {
+		margin: 0 310px 0 0;
+	}
+}
+
+//sidebar
+.site-content .widget {
+	
+	@include mq(48em) {
+		max-width: 300px;
+		width: 30%;
+		float: left;
+		margin-top: 3em;
+		background: #eee;
+		padding: 2em;
+	}
+	.widget-title {
+		margin-top: 0;
+	}
+	.menu {
+		margin: 0;
+		padding: 0;
+		.menu-item {
+			list-style-type: none;
+			border-bottom: 1px solid $primary-color;
+			a {
+				display: block;
+				padding: 1em 0;
+				text-transform: uppercase;
+				transition: all 250ms ease;
+				&:hover {
+					color: #666;
+					transform: translateX(3%);
+				}
+			}
+		}
+	}
+	&.categories-widget ul {
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		list-style-type: none;
+		border-bottom: 1px solid $primary-color;
+		a {
+			display: block;
+			padding: 1em 0;
+			text-transform: uppercase;
+			transition: all 250ms ease;
+			&:hover {
+				color: #666;
+				transform: translateX(3%);
+			}
+		}
+	}
+}
+
+
+.sub-page-list {
+	li {
+		border-bottom: 1px solid #ccc;
+	}
+}
+
+
+//blog content
+.post-block {
+	display: inline-block;
+	p {
+		@include mq(48em) {
+			float: left;
+			width: 66%;
+		}
+	}
+}
+.list-group-item:first-child, .list-group-item:last-child {
+	border-radius: 0;
+}
+#map-canvas {
+	width: 100%;
+	height: 250px;
+	margin: 0 auto;
+}
+address {
+	margin-bottom: 0;
+}
+//homepage
+.homepage-section {
+	background: #000;
+	color: #fff;
+	padding: 2em 1em 3em;
+	border-bottom: 1px solid $primary-color;
+	h2 {
+		text-align: center;
+		font-size: 3em;
+		background: url("http://maxtestdomain.com/epigenetics-healing-center/wp-content/uploads/2015/03/logo-div-dark-color-white.png") no-repeat bottom center; 
+		@extend .logo-divider;
+	}
+	.image-responsive {
+		padding: .5em;
+	}
+}
+.text-section {
+	border-bottom: 1px solid $primary-color;
+	color: $primary-color;
+	text-transform: uppercase;
+	font-size: 1.1em;
+	padding-bottom: 1em;
+}
+
+.section-header {
+	font-size: 42px;
+	background: url("http://maxtestdomain.com/epigenetics-healing-center/wp-content/uploads/2015/03/logo-div-dark-color-blue.png") no-repeat bottom center; 
+	@extend .logo-divider;
+}
+
+.is-hidden {
+	display: none;
+}
+.is-open {
+ 	background: #eee;
+ 	@extend .arrow_box
+}
+
+.sub-content-image {
+	display: inline;
+	img {
+		padding: .5em;
+		@include mq(48em) {
+			padding: 0 1.5em 1em 0;
+			float: left;
+			width: 275px;
+			height: 275px;
+		}
+	}
+}
+
+
+//footer contact section 
+$height: 700px;
+.footer-contact { 
+	background: url("http://maxtestdomain.com/epigenetics-healing-center/wp-content/uploads/2015/03/contact.jpg") no-repeat center center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	min-height: $height;
+	background-size: cover;
+
+	.container {
+		min-height: $height;
+		background: rgba(0, 0, 0, 0.6);
+  		color: #fff;
+	}
+	.contact-form {
+		input, textarea.medium {
+			padding-right: 2px;
+			background: Transparent;
+			border: 1px solid #ccc;
+			color: #fff;
+			width: 100%;
+		}
+		input.button {
+			@extend .button.gform_button;
+		}
+	}
+	h2 {
+		text-align: center;
+		font-size: 3em;
+		color: #fff;
+		background: url("http://maxtestdomain.com/epigenetics-healing-center/wp-content/uploads/2015/03/logo-div-dark-color-white.png") no-repeat bottom center; 
+		@extend .logo-divider;
+	}
+	i {
+		padding-right: .5em;
+	}
+	&-sub {
+		@include mq(48em) {
+			padding: 1em 7em;
+		}
+	}
+}
+.footer-contact-featured {
+	background: #eee;
+	padding: 4em 0;
+}
+
+.featured-articles-header {
+	font-size: 36px;
+	background: url("http://maxtestdomain.com/epigenetics-healing-center/wp-content/uploads/2015/03/logo-div-dark-color-blue.png") no-repeat bottom center; 
+	@extend .logo-divider;
+}
+.footer-contact-row {
+	padding: 4em 0;
+}
+.section-primary .footer-social {
+	i.fa {
+		color: $primary-color;
+	}
+}
+// gravity forms overrides
+.button.gform_button {
+	background-color: $cta-color;
+	padding: 10px 16px;
+	font-size: 18px;
+	line-height: 1.3333333;
+	border-radius: 0;
+	color: #fff;
+	width: auto;
+	border: 1px solid $cta-color;
+}
+
+.widget.gform_widget .widget-title:before{
+	content: "\f003";
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transform: translate(0, 0);
+	  padding-right: 0.3em;
+}
+
+.newsletter-label {
+	margin-right: 1em;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left;
+}
+
+
+//requst an appointment widget
+.site-content .widget.gform_widget {
+	h2 {
+		font-size: 1.3em;
+	}
+	li {
+		border: none;
+		.medium {
+			width: 100%;
+		}
+		.datepicker {
+			width: 90%!important;
+		}
+	}
+}
+
+
+.button-link {
+	display: inline-block;
+	color: #fff;
+	@extend .button.gform_button;
+}
+// Gravity Forms newsletter overrides
+#gform_wrapper_4 {
+	@include mq(48em) {
+		display: inline-block;
+		width: auto;
+	}
+	.gform_body {
+		@include mq(48em) {
+			display: inline-block;
+		}
+		
+	}
+	.newsletter-name {
+		@include mq(48em) {
+			display: inline-block;
+			width: 300px;
+			margin-bottom: 0;
+			vertical-align: middle;
+		}
+		label {
+			@include mq(48em) {
+				display: none;
+			}
+
+		}
+		input {
+			@include mq(48em) {
+				border: 1px solid #fff;
+				background: transparent;
+			    color: #fff;
+				letter-spacing: 1px;
+			}
+		}
+	}
+	.newsletter-email {
+		@include mq(48em) {
+			display: inline-block;
+			width: 300px;
+			margin-bottom: 0;
+		}
+		label {
+			@include mq(48em) {
+				display: none;
+			}
+		}
+		input {
+			@include mq(48em) {
+				border: 1px solid #fff;
+				background: transparent;
+				width: 100%;
+				color: #fff;
+				letter-spacing: 1px;
+			}
+		}
+	}
+
+	.gform_footer {
+		@include mq(48em) {
+			display: inline-block;
+			padding: 0;
+			margin: 0;
+			width: 85px;
+			.gform_button {
+				box-sizing: border-box;
+				height: 34px;
+				vertical-align: middle;
+				line-height: 15px;
+				margin-top: 1px;
+			}
+		}
+	}
+}
+body .gform_wrapper label.gfield_label + div.ginput_container {
+	width: 100%;
+	overflow: visible;
+	margin: 0!important;
+}
+
+.contact-form_wrapper {
+	.contact-form {
+		li input.medium {
+			width: 100%;
+		}
+	}
+	&.gform_wrapper {
+		.ginput_complex label {
+			display: none;
+		}
+		.top_label .gfield_label {
+			display: none;
+		}
+		.gform_footer {
+			margin: 0;
+			padding: 0;
+		}
+		.ginput_complex .name_first input {
+			width: 100%;
+		}
+	}
+}
+
+
+.footer-newsletter {
+	background: $primary-color;
+	color: #fff;
+	text-transform: uppercase;
+	display: none;
+}
+
+.testimonials {
+	border-bottom: 1px solid #ccc;
+	.entry-content p {
+		float: left;
+		width: 58%;
+	}
+}
+.testimonial-video {
+	@include mq(48em) {
+		float: left;
+		width: 40%;
+		padding-right: 2em;
+	}
+}
+footer {
+	h3 {
+		font-size: 22px;
+		text-transform: uppercase;
+		margin-top: 0;
+	}
+}
+
+.footer-address h3 {
+	font-size: 20px;
+}
+
+.site-info {
+	background: #000;
+	padding: 1em;
+	a {
+		color: $primary-light-color;
+		line-height: 2.3;
+	}
+}
+
+.static-pages-title {
+	transition: color 250ms ease;
+	&:hover {
+		color: #a5a5a5;
+	}
+}
+
+#swpm-registration-form, #swpm-login-form { 
+	input, label {
+		margin-bottom: 1em;
+	}
+	#submit, .swpm-login-submit input {
+		background-color: #f47525;
+		padding: 10px 16px;
+		font-size: 18px;
+		line-height: 1.3333333;
+		border-radius: 0;
+		color: #fff;
+		width: auto;
+		border: 1px solid #f47525;
+	}
+}
+
+.swpm-login-action-msg {
+  font-size: 1.75em;
+  font-weight: normal;
+  border: 1px solid #ccc;
+  padding: 5px;
+  display: inline-block;
+	.swpm-login-widget-action-msg {
+		
+	}
+}
+
+// google map full width
+#googleMap iframe {
+   width: 100%;
+}
+#googleMap {
+   height: 350px;
+}
+#googleMap img { max-width: none; }
