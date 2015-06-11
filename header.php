@@ -106,7 +106,7 @@ rel="stylesheet" type="text/css">
                         </div>
                     </li>
                     <li class="media">
-                        <a class="pull-left" href="<?php echo get_permalink( 82 ); ?>"><img src="h<?php bloginfo('url'); ?>/wp-content/uploads/2015/04/testimonials-johanna-epstein-e1428085324680.jpg" alt="text here" height="125" width="125" class="img-circle"></a>
+                        <a class="pull-left" href="<?php echo get_permalink( 82 ); ?>"><img src="<?php bloginfo('url'); ?>/wp-content/uploads/2015/04/testimonials-johanna-epstein-e1428085324680.jpg" alt="text here" height="125" width="125" class="img-circle"></a>
                         <div class="media-body">
                             <h4 class="media-heading"><a href="<?php echo get_permalink( 82 ); ?>">Success Stories</a></h4>
                             <p>We value our patients' experience.</p> 
@@ -116,7 +116,7 @@ rel="stylesheet" type="text/css">
                         <a class="pull-left" href="<?php echo get_permalink( 91 ); ?>"><img src="<?php bloginfo('url'); ?>/wp-content/uploads/2015/04/meet-doctor.jpg" alt="text here" height="125" width="125" class="img-circle"></a>
                         <div class="media-body">
                             <h4 class="media-heading"><a href="<?php echo get_permalink( 91 ); ?>">Meet the Doctor</a></h4>
-                            <p>Jay Goodbinder PSc. Dr.</p> 
+                            <p>Jay Goodbinder PSc. D</p> 
                         </div>
                     </li>
                 </ul>

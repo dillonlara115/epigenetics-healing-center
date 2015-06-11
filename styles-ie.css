@@ -1,7 +1,7 @@
 /*--------------------------------------------------------------
 # Custom styles
 --------------------------------------------------------------*/
-.logo-divider, .entry-title, .homepage-section h2, .section-header, .footer-contact h2, .featured-articles-header {
+.logo-divider, .entry-title, .homepage-section h2, .section-header, .featured-articles-header {
   padding: 10px 0 90px;
   margin-bottom: 1em; }
 
@@ -711,7 +711,7 @@ address {
     text-align: center;
     font-size: 3em;
     color: #fff;
-    background: url("http://maxtestdomain.com/epigenetics-healing-center/wp-content/uploads/2015/03/logo-div-dark-color-white.png") no-repeat bottom center; }
+    margin: 1em 0 2em; }
   .footer-contact i {
     padding-right: .5em; }
   .footer-contact-sub {
