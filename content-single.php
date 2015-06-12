@@ -11,7 +11,7 @@
 		
 	</header><!-- .entry-header -->
 		
-	<div class="entry-content">
+	<div class="entry-content blog-post">
 	<?php the_post_thumbnail('large') ?>
 		<?php the_content(); ?>
 		<?php

@@ -19,7 +19,7 @@ get_header(); ?>
                 	<h2 class="text-center">Welcome to The Epigenetics Healing Center</h2>
                     <div class="col-md-6">
                     <p>Dr. Jay Goodbinder PSc. D is a doctor serving Overland Park and the surrounding communities. Our doctor and the rest of the friendly team at The Epigenetics Healing Center are dedicated to functional medicine solutions to target your unique needs, whether you are suffering from Diabetes, Hypothyroid, Rheumatoid Arthritis, fibromyalgia, crohn's disease, lupus, high blood pressure, high cholesterol, back pain, neck pain, headaches, or even just plain old muscular tightness and tension; we have a treatment for you.  Even if you just want to improve your overall health, our holistic doctor can help you achieve your wellness goals! Please visit the testimonials page to see what our patients are saying about our Overland Park holistic doctor.</p>
-                        <a href="//fast.wistia.net/embed/iframe/9x36g5w818?popover=true" class="wistia-popover[height=360,playerColor=317ea9,width=640]"><img src="https://embed-ssl.wistia.com/deliveries/8dfa16d7dcdca48c5262affa1a4dca9c46d10fca.jpg?image_play_button=true&image_play_button_color=317ea9e0&image_crop_resized=500x281" alt="" /></a>
+                        <a href="//fast.wistia.net/embed/iframe/9x36g5w818?popover=true" class="wistia-popover[height=360,playerColor=317ea9,width=640]"><img src="https://embed-ssl.wistia.com/deliveries/8dfa16d7dcdca48c5262affa1a4dca9c46d10fca.jpg?image_play_button=true&image_play_button_color=317ea9e0&image_crop_resized=500x281" alt="" class="full-width-image" /></a>
 <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/popover-v1.js"></script>
                     </div>
 
