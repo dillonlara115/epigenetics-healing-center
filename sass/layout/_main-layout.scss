@@ -51,6 +51,9 @@ html {
 	}
 	&.cover-secondary {
 		min-height: 400px;
+		@media (max-width: 36em) {
+			min-height: 200px;
+		}
 		h1 {
 			margin: 1.5em 0;
 		}
@@ -108,7 +111,7 @@ video {
 	min-height: 100%;
 	width: auto;
 	height: auto;
-	background: url(http://maxtestdomain.com/epigenetics-healing-center/wp-content/uploads/2015/06/Screen-Shot-2015-06-11-at-12.59.00-PM.png) no-repeat center center;
+	background: url(/wp-content/uploads/2015/06/Screen-Shot-2015-06-11-at-12.59.00-PM.png) no-repeat center center;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -158,7 +161,7 @@ video {
 		
 	}
 	.cover-image-sub {
-		background: url("http://maxtestdomain.com/epigenetics-healing-center/wp-content/uploads/2015/04/sub-header-image2.jpg") no-repeat center center; 
+		background: url("/wp-content/uploads/2015/04/sub-header-image2.jpg") no-repeat center center; 
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
@@ -182,6 +185,9 @@ video {
 			margin: 0 auto;
 			padding-top: 110px;
 			width: auto;
+			@media (max-width: 36em) {
+				padding-top: 20px;
+			}
 		}
 	}
 	.media-body p {
@@ -281,7 +287,7 @@ video {
 	}
 	&:before {
 		content: '';
-		background: url('http://maxtestdomain.com/epigenetics-healing-center/wp-content/uploads/2015/04/icon-phone-white.gif');
+		background: url('/wp-content/uploads/2015/04/icon-phone-white.gif');
 		display: inline-block;
 		width: 18px;
 		height: 18px;
@@ -495,7 +501,7 @@ a:link{
 	color: $primary-color;
 	font-size: 42px;
 	text-align: center;
-	background: url("http://maxtestdomain.com/epigenetics-healing-center/wp-content/uploads/2015/03/logo-div-light-blue.png") no-repeat bottom center; 
+	background: url("/wp-content/uploads/2015/03/logo-div-light-blue.png") no-repeat bottom center; 
 	@extend .logo-divider;
 	&-testimonial {
 		color: $primary-color;
@@ -581,7 +587,7 @@ figure.bucket {
 	figure {
 		position: relative;
 		overflow: hidden;
-		margin: .5em;
+		margin: .5em .3em;
 		background: #3085a3;
 		text-align: center;
 		cursor: pointer;
@@ -777,6 +783,7 @@ figure.bucket {
 	@include mq(48em) {
 		float: right;
 		width: 65%;
+		min-height: 450px;
 	}
 
 }
@@ -876,7 +883,7 @@ address {
 	h2 {
 		text-align: center;
 		font-size: 3em;
-		background: url("http://maxtestdomain.com/epigenetics-healing-center/wp-content/uploads/2015/03/logo-div-dark-color-white.png") no-repeat bottom center; 
+		background: url("/wp-content/uploads/2015/03/logo-div-dark-color-white.png") no-repeat bottom center; 
 		@extend .logo-divider;
 	}
 	.image-responsive {
@@ -893,7 +900,7 @@ address {
 
 .section-header {
 	font-size: 42px;
-	background: url("http://maxtestdomain.com/epigenetics-healing-center/wp-content/uploads/2015/03/logo-div-dark-color-blue.png") no-repeat bottom center; 
+	background: url("/wp-content/uploads/2015/03/logo-div-dark-color-blue.png") no-repeat bottom center; 
 	@extend .logo-divider;
 }
 
@@ -922,7 +929,7 @@ address {
 //footer contact section 
 $height: 700px;
 .footer-contact { 
-	background: url("http://maxtestdomain.com/epigenetics-healing-center/wp-content/uploads/2015/03/contact.jpg") no-repeat center center; 
+	background: url("/wp-content/uploads/2015/03/contact.jpg") no-repeat center center; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -968,11 +975,14 @@ $height: 700px;
 
 .featured-articles-header {
 	font-size: 36px;
-	background: url("http://maxtestdomain.com/epigenetics-healing-center/wp-content/uploads/2015/03/logo-div-dark-color-blue.png") no-repeat bottom center; 
+	background: url("/wp-content/uploads/2015/03/logo-div-dark-color-blue.png") no-repeat bottom center; 
 	@extend .logo-divider;
 }
 .footer-contact-row {
 	padding: 4em 0;
+	img {
+		padding: 4em 0;
+	}
 }
 .section-primary .footer-social {
 	i.fa {
@@ -1026,7 +1036,7 @@ $height: 700px;
 		}
 	}
 }
-
+ 
 
 .button-link {
 	display: inline-block;
@@ -1144,17 +1154,12 @@ body .gform_wrapper label.gfield_label + div.ginput_container {
 
 .testimonials {
 	border-bottom: 1px solid #ccc;
-	.entry-content p {
-		float: left;
-		width: 58%;
-	}
+
 }
 .testimonial-video {
-	@include mq(48em) {
-		float: left;
-		width: 40%;
-		padding-right: 2em;
-	}
+	
+		padding-bottom: 1em;
+	
 }
 footer {
 	h3 {
@@ -1164,8 +1169,13 @@ footer {
 	}
 }
 
-.footer-address h3 {
-	font-size: 20px;
+.footer-address {
+	img {
+		width: 100%;
+	}
+	h3 {
+		font-size: 20px;
+	}
 }
 
 .site-info {

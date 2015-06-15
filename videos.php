@@ -5,7 +5,7 @@
 <?php get_header() ?>
 <h2 class="entry-title"><?php the_title(); ?></h2>
 <div class="text-center">
-<a href="//fast.wistia.net/embed/iframe/9x36g5w818?popover=true" class="wistia-popover[height=360,playerColor=317ea9,width=640]"><img src="https://embed-ssl.wistia.com/deliveries/8dfa16d7dcdca48c5262affa1a4dca9c46d10fca.jpg?image_play_button=true&image_play_button_color=317ea9e0&image_crop_resized=500x281" alt="" /></a>
+<a href="//fast.wistia.net/embed/iframe/9x36g5w818?popover=true" class="wistia-popover[height=360,playerColor=317ea9,width=640]"><img src="https://embed-ssl.wistia.com/deliveries/8dfa16d7dcdca48c5262affa1a4dca9c46d10fca.jpg?image_play_button=true&image_play_button_color=317ea9e0&image_crop_resized=500x281" alt="" style="width:100%;" /></a>
 <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/popover-v1.js"></script>
 </div>
 

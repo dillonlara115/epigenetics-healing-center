@@ -3,9 +3,29 @@
 $(document).ready(function(){
   //slick
   $('.video-container').slick({
-    slidesToShow: 5,
+    slidesToShow: 1,
     slidesToScroll: 1,
-    focusOnSelect: true
+    focusOnSelect: true,
+    mobileFirst: true,
+    responsive: [
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        focusOnSelect: true
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        focusOnSelect: true
+      }
+    }
+    ]
+    
   });
 
 
@@ -19,11 +39,34 @@ $(document).ready(function(){
     asNavFor: '.sub-video-container'
   });
   $('.sub-video-container').slick({
-    slidesToShow: 3,
+    mobileFirst: true,
+    slidesToShow: 1,
     slidesToScroll: 1,
     asNavFor: '.main-sub-video',
     arrows: true,
     focusOnSelect: true,
+    responsive: [
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: true,
+        asNavFor: '.main-sub-video',
+        focusOnSelect: true
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        asNavFor: '.main-sub-video',
+        focusOnSelect: true
+      }
+    }
+    ]
   });
 
 $('.sub-video-container').find('[data-slick-index=0]').addClass('currentSlide');
@@ -87,11 +130,11 @@ $(window).scroll(function() {
 if ($(this).scrollTop() > 50){  
     $('header').addClass("sticky");
    // $('.navbar-header').css("max-width", '250px');
-   $('.header-logo').attr('src', 'http://maxtestdomain.com/epigenetics-healing-center/wp-content/uploads/2015/03/the-epig-healing-center.png')
+   $('.header-logo').attr('src', 'http://drgoodbinder.com/wp-content/uploads/2015/03/the-epig-healing-center.png')
   }
   else{
     $('header').removeClass("sticky");
-    $('.header-logo').attr('src', 'http://maxtestdomain.com/epigenetics-healing-center/wp-content/uploads/2015/04/logo-large-white.png')
+    $('.header-logo').attr('src', 'http://drgoodbinder.com/wp-content/uploads/2015/04/logo-large-white.png')
 
   }
 });
@@ -143,7 +186,7 @@ $('[class="static-pages-title"]').on('click', function(){
   $('.modal-title').text(title);
   if (videoSite == 'youtube') {
     
-    $('.video-content').html('<iframe width="100%" height="400" src="http://www.youtube.com/embed/' + videoId +'" frameborder="0" allowfullscreen></iframe>');
+    $('.video-content').html('<iframe width="100%" height="400" src="http://www.youtube.com/embed/' + videoId +'?rel=0" frameborder="0" allowfullscreen></iframe>');
   }
 });
 

@@ -42,37 +42,37 @@ get_header(); ?>
                     <div class="col-md-12">
                         <h2 class="text-center section-header">Success Stories</h2>
                         <div class="col-md-6"  data-content='1' id='content1'>
-                            <h3>Client Success Story 1</h3>
-                            <iframe src="http://www.youtube.com/embed/6fCCa8TGHog" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                            <h3>Colon Cancer Success Story</h3>
+                            <iframe src="http://www.youtube.com/embed/6fCCa8TGHog?rel=0" width="500" height="281" frameborder="0"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                         </div>
                         <div class="col-md-6 is-hidden" data-content='2' id='content2'>
-                            <h3>Client Success Story 2</h3>
-                            <iframe src="http://www.youtube.com/embed/22kEE76INVE" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                            <h3>Thyroid Success Story</h3>
+                            <iframe src="http://www.youtube.com/embed/22kEE76INVE?rel=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                         </div>
                         <div class="col-md-6 is-hidden" data-content='3' id='content3'>
-                            <h3>Client Success Story 3</h3>
-                            <iframe src="http://www.youtube.com/embed/sxchDJCJdJk" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                            <h3>Stage 4 Cancer Success Story</h3>
+                            <iframe src="http://www.youtube.com/embed/sxchDJCJdJk?rel=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                         </div>
                         <div class="col-md-6">
                             <ul class="media-list side-nav">
                                 <li class="media is-open">
                                     <a class="pull-left" href="#content1"><img class="media-object" src="<?php bloginfo('url'); ?>/wp-content/uploads/2015/03/success-story-1-ehc.jpg" height="64" width="64"></a>
                                     <div class="media-body">
-                                        <h4 class="media-heading">M.H.</h4>
+                                        <h4 class="media-heading">S.F.</h4>
                                         <p><em>I knew what Dr. Goodbinder was telling me were the facts, there was truth behind it, and he explained it at a level that made sense to me...</em></p>
                                     </div>
                                 </li>
                                 <li class="media">
                                     <a class="pull-left" href="#content2"><img class="media-object" src="<?php bloginfo('url'); ?>/wp-content/uploads/2015/03/success-story-2-ehc.jpg" height="64" width="64"></a>
                                     <div class="media-body">
-                                        <h4 class="media-heading">M.R.</h4>
+                                        <h4 class="media-heading">D.C.</h4>
                                         <p><em>I think people should know that a prescription medication from a doctor isn't always the way to go...</em></p>
                                     </div>
                                 </li>
                                 <li class="media">
                                     <a class="pull-left" href="#content3"><img class="media-object" src="<?php bloginfo('url'); ?>/wp-content/uploads/2015/04/success-story-3-ehc.jpg" height="64" width="64"></a>
                                     <div class="media-body">
-                                        <h4 class="media-heading">C.G.</h4>
+                                        <h4 class="media-heading">D.L.</h4>
                                         <p><em>Dr. Goodbinder's program helped me totally reduce the bad side effects of chemotherapy. I trusted him with with life...</em></p>
                                     </div>
                                 </li>

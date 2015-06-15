@@ -20,11 +20,11 @@
 	    	 <?php
 	      if ($videosite == 'vimeo')
 	      {
-	          echo '<iframe src="http://player.vimeo.com/video/'.$videoid.'" width="400" height="200" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
+	          echo '<iframe src="http://player.vimeo.com/video/'.$videoid.'" width="100%" height="400" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
 	      }
 	      else if ($videosite == 'youtube')
 	      {
-	          echo '<iframe width="400" height="200" src="http://www.youtube.com/embed/'.$videoid.'" frameborder="0" allowfullscreen></iframe>';
+	          echo '<iframe width="100%" height="400" src="http://www.youtube.com/embed/'.$videoid.'?rel=0" frameborder="0" allowfullscreen></iframe>';
 	      }
 	     
 	      ?>

@@ -19,7 +19,7 @@ for ($x = 0; $x <= 2; $x++) {
       }
       else if ($videosite == 'youtube')
       {
-          echo '<iframe width="100%" height="400" src="http://www.youtube.com/embed/'.$videoid.'" frameborder="0" allowfullscreen></iframe>';
+          echo '<iframe width="100%" height="400" src="http://www.youtube.com/embed/'.$videoid.'?rel=0" frameborder="0" allowfullscreen></iframe>';
       }
      
       ?>

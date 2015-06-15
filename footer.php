@@ -18,8 +18,8 @@
             	<h2 class="text-center">Learn More About Us</h2>
 
 	            	<div class="col-md-6 footer-contact-sub">
-		            	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula, nisl eu cursus commodo, nunc ex suscipit erat, sed molestie diam tellus eget purus. Nulla facilisi. Nullam efficitur dolor nibh, ac vulputate arcu rhoncus ut. Cras dapibus, nibh a scelerisque convallis, erat est maximus leo, a volutpat eros ipsum eget orci. Aenean viverra leo enim, quis ultricies eros posuere id. Curabitur ipsum mauris, iaculis ac nulla at, aliquet auctor nulla. Ut ultricies a felis vel porttitor. Curabitur gravida risus ac augue mattis, et imperdiet sem luctus. Vestibulum felis mi, luctus non malesuada vel, condimentum ut lacus. Vivamus non risus vitae nulla pulvinar ultrices ac nec sem.
-					</p>
+		            	<p>Contact the Epigenetics Healing Center to explore our Full Life Restoration Program.</p>
+				<p>The Epigenetics Healing Center in Overland Park emphasizes the importance of improving your health in an effort to reduce the risk of or cure chronic disease including diabetes, hypothyroidism, Rheumatoid Arthritis, Fibromyalgia, auto-immune diseases, inflammatory pathologies and more!</p>
 	            	</div>
             		<div class="col-md-6 footer-contact-sub">
             			<h4><i class="fa fa-envelope-o"></i>Contact us for more information</h4>
@@ -63,7 +63,7 @@
                         <a href="tel:9133399951">(913) 339-9951</a> 
                         <hr>
                         <h3>Fax</h3>
-                        <a href="tel:9133399951">(913) 339-9951</a> 
+                        <a href="tel:9133399951">(913) 339-9953</a> 
                     </div>
                     <div class="col-md-4 text-center">
                         <img src="<?php bloginfo('url'); ?>/wp-content/uploads/2015/03/logo-only.png" alt="Dr. Goodbinder">

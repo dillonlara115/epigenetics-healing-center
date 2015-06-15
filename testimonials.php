@@ -12,7 +12,7 @@ get_header(); ?>
 
 
 			<?php while ( have_posts() ) : the_post(); ?>
-
+			
 				<?php get_template_part( 'content', 'testimonial' ); ?>
 
 				<?php
@@ -23,7 +23,12 @@ get_header(); ?>
 				?>
 
 			<?php endwhile; // end of the loop. ?>
-
+			<div>
+				<p>We value our patients' experience at The Epigenetics Healing Center. If you are currently a functional medicine patient, please feel free to complete the following Client Experience Questionnaire. The Questionnaire is in Adobe Acrobat format, and requires the free Acrobat Reader to view.</p>
+				<p><a href="http://maxtestdomain.com/epigenetics-healing-center/wp-content/uploads/2015/06/Client_Experience_Questionnaire.pdf" target="_blank">Download & Print Questionnaire</a></p>
+				
+			</div>
+			
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
