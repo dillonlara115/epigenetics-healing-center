@@ -1,6 +1,9 @@
 /*--------------------------------------------------------------
 # Custom styles
 --------------------------------------------------------------*/
+.site-main .section {
+  padding: 0; }
+
 .logo-divider, .entry-title, .homepage-section h2, .section-header, .featured-articles-header {
   padding: 10px 0 90px;
   margin-bottom: 1em; }
@@ -614,7 +617,7 @@ figure.bucket {
 .content-area {
   float: right;
   width: 65%;
-  min-height: 450px; }
+  min-height: 550px; }
 
 .site-secondary {
   margin: 0 310px 0 0; }

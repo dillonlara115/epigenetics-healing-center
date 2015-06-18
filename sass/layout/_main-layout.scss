@@ -4,7 +4,11 @@
 @import '../mediaq';
 @import '../variables-site/colors';
 
-
+.site-main {
+	.section {
+		padding: 0;
+	}
+}
 // extends
 .logo-divider {
 	padding: 10px 0 90px;
@@ -783,7 +787,7 @@ figure.bucket {
 	@include mq(48em) {
 		float: right;
 		width: 65%;
-		min-height: 450px;
+		min-height: 550px;
 	}
 
 }

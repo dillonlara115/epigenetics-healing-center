@@ -178,7 +178,10 @@ $('.side-nav li').on('click', function(e){
   }
 });
 
-$('[class="static-pages-title"]').on('click', function(){
+
+
+$('body').on('click', '.static-pages-title',function(){
+  console.log('static pages title clicked');
   var title = $(this).text();
   var videoSite = $(this).attr('data-video-site');
   var videoId = $(this).attr('data-video-id');
